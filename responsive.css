@@ -809,7 +809,7 @@ section{
 
 }
 
-@media  (max-width: 400px){
+@media  (max-width: 500px){
 :root{
     --p-font-size: 10px;
     --p-mini-font-size:8px;
