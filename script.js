@@ -1,0 +1,148 @@
+window.addEventListener("scroll", ()=>{
+    var nav_bg_color= document.getElementById("nav_area");
+    if(window.scrollY>100){
+        nav_bg_color.classList.add("nav_bg_color")
+        nav_bg_color.classList.add("nav_area_other_page_bg_color")
+    }else{
+        nav_bg_color.classList.remove("nav_bg_color")
+        nav_bg_color.classList.remove("nav_area_other_page_bg_color")
+    }
+})
+
+
+//=================================
+  const menuBtn = document.querySelector('.menu_btn');
+  const menuArea = document.querySelector('.menu_btn_area');
+
+  menuBtn.addEventListener('click', () => {
+    menuArea.classList.toggle('active');
+  });
+
+//=========================================================
+var service_btn= document.querySelectorAll(".Service .service_btn_area button");
+var service_box= document.querySelectorAll(".Service .service_area .service_box")
+
+service_btn.forEach((btn)=>{
+    btn.addEventListener("click", (e)=>{
+        var service_filter= e.target.dataset.filter
+        service_btn.forEach((b)=>{
+            b.classList.remove("active")
+        })
+        e.target.classList.add("active")
+
+        service_box.forEach((img)=>{
+            
+            if(img.classList.contains(service_filter)){
+                img.style.display="flex"
+            }else{
+                img.style.display="none"
+            }
+        })
+    })
+})
+
+//==============================
+
+var portfolio_btn= document.querySelectorAll(".portfolio .btn_area button")
+var portfolio_box= document.querySelectorAll(".portfolio .portfolio_area .p_box")
+
+portfolio_btn.forEach((btn)=>{
+    btn.addEventListener("click", (e)=>{
+        var portfolio_filter= e.target.dataset.filter
+        portfolio_btn.forEach((b)=>{
+            b.classList.remove("active")
+        })
+        e.target.classList.add("active")
+
+        portfolio_box.forEach((box)=>{
+            if(box.classList.contains(portfolio_filter)){
+                box.style.display="block"
+            }else{
+                box.style.display="none"
+            }
+        })
+    })
+})
+
+//===========progress countion==========
+
+var hero_right_count= document.querySelector(".hero_area .right .hero_skill_text .hero_right_count")
+var hero_right_count_start= 0;
+var hero_right_count_end= 50;
+var count_speed= 20;
+
+var hero_right_count_fn= setInterval(()=>{
+    hero_right_count_start++
+    hero_right_count.textContent= `${hero_right_count_start}+`
+    if(hero_right_count_start==hero_right_count_end){
+        clearInterval(hero_right_count_fn)
+    }
+},count_speed)
+//===================
+
+
+
+// Select all skill counters (1st set)
+var skill_s1_count = document.querySelector(".skills .right .skills_col .s1_count");
+var skill_s2_count = document.querySelector(".skills .right .skills_col .s2_count");
+var skill_s3_count = document.querySelector(".skills .right .skills_col .s3_count");
+var skill_s4_count = document.querySelector(".skills .right .skills_col .s4_count");
+var skill_s5_count = document.querySelector(".skills .right .skills_col .s5_count");
+var skill_s6_count = document.querySelector(".skills .right .skills_col .s6_count");
+
+// Select all skill counters (2nd set)
+var skill_s1_count2 = document.querySelector(".skills .right .skills_col .s1_count2");
+var skill_s2_count2 = document.querySelector(".skills .right .skills_col .s2_count2");
+var skill_s3_count2 = document.querySelector(".skills .right .skills_col .s3_count2");
+var skill_s4_count2 = document.querySelector(".skills .right .skills_col .s4_count2");
+var skill_s5_count2 = document.querySelector(".skills .right .skills_col .s5_count2");
+var skill_s6_count2 = document.querySelector(".skills .right .skills_col .s6_count2");
+
+// Define end values for each skill
+var skill_s1_count_end = 90;
+var skill_s2_count_end = 95;
+var skill_s3_count_end = 97;
+var skill_s4_count_end = 90;
+var skill_s5_count_end = 91;
+var skill_s6_count_end = 94;
+
+// Speed of counting (in ms)
+var skill_count_speed = 20;
+
+// Function to animate each skill counter
+function animateCounter(element, endValue) {
+    let startValue = 0;
+    let interval = setInterval(() => {
+        startValue++;
+        element.textContent = `${startValue}%`;
+        if (startValue === endValue) {
+            clearInterval(interval);
+        }
+    }, skill_count_speed);
+}
+
+// Start animations for both counter sets
+animateCounter(skill_s1_count, skill_s1_count_end);
+animateCounter(skill_s1_count2, skill_s1_count_end);
+
+animateCounter(skill_s2_count, skill_s2_count_end);
+animateCounter(skill_s2_count2, skill_s2_count_end);
+
+animateCounter(skill_s3_count, skill_s3_count_end);
+animateCounter(skill_s3_count2, skill_s3_count_end);
+
+animateCounter(skill_s4_count, skill_s4_count_end);
+animateCounter(skill_s4_count2, skill_s4_count_end);
+
+animateCounter(skill_s5_count, skill_s5_count_end);
+animateCounter(skill_s5_count2, skill_s5_count_end);
+
+animateCounter(skill_s6_count, skill_s6_count_end);
+animateCounter(skill_s6_count2, skill_s6_count_end);
+
+//===============================================
+
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = () => {
+      topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
+    };
