@@ -13,7 +13,7 @@ const swiper = new Swiper('.blog_area_slide_warper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  spaceBetween: 20,
+  spaceBetween: 24,
   mousewheel: true,
   keyboard: true,
       breakpoints: {
@@ -21,8 +21,11 @@ const swiper = new Swiper('.blog_area_slide_warper', {
     700: {
       slidesPerView: 3,
     },
-    200:{
+    300:{
       slidesPerView: 2,
+    },
+    0:{
+      slidesPerView: 1,
     }
   }
 
@@ -54,8 +57,11 @@ const swiper2 = new Swiper('.resentwork_swiper', {
     800: {
       slidesPerView: 3,
     },
-    200:{
+    425:{
       slidesPerView: 2,
+    },
+    0:{
+      slidesPerView: 1,
     }
   }
 
