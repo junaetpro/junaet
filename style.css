@@ -1405,7 +1405,7 @@ background-color: var(--color-one);
 /*--=============brand_logo start====================--*/
 
 .brand_logo{
-    padding-block: 80px;
+    padding-block: 50px;
     background-color: #363636;
 }
 .brand_logo .brand_logo_swiper{
@@ -1420,7 +1420,8 @@ background-color: var(--color-one);
     justify-content: center;
 }
 .brand_logo .brand_logo_swiper .col img{
-    width:auto;
+    width:40%;
+    
 }
 /*--=============brand_logo end====================--*/
 
