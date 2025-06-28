@@ -839,12 +839,9 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 .contact_info_3_box{
     
     background: radial-gradient(circle at 10% 0%, #2e4d36, #212121, #212121);
-
+    padding: var(--section-padding);
 }
 
-.contact_info_3_box{
-   padding-top: 100px;
-}
 .contact_info_3_box .contact_info_3_box_row{
     display: flex;
     align-items: center;
@@ -853,7 +850,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 }
 .contact_info_3_box .contact_info_3_box_row .contact_info_3_box_col{
     padding: 30px;
-    flex-basis: 25%;
+    flex-basis: 27%;
     margin: 10px;
     background-color: #212121;
     color: var(--text-color);
@@ -884,7 +881,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 
 .contact_info_3_box .text_area{
     text-align: center;
-    padding: 120px 0 80px;
+    padding: 110px 0 60px;
     color: #fff;
 
 }
@@ -893,7 +890,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
     margin-bottom: 20px;
 }
 .contact_info_3_box .text_area p{
-    line-height: 25px;
+    line-height: var(--p-line-hight);
     font-size: var(--p-font-size);
 }
 
@@ -904,7 +901,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
     padding: 50px;
     width: 70%;
     margin: auto;
-    margin-bottom: -100px;
+    margin-bottom: -200px;
     z-index: 5;
     position: relative;
     border-radius: 10px;
