@@ -827,7 +827,7 @@ margin-top: 40px;
 
 .page_into{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/page-title2.jpg);
-    height: 12vh;
+    height: 15vh;
     background-position: right;
     position: relative;
 }
