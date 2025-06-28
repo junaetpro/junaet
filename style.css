@@ -383,6 +383,74 @@ h1, h2, h3, h4, h5, h6, span{
     text-transform: capitalize;
 }
 
+
+
+
+/*--============= about left img====================--*/
+
+.about .left{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.about .left .img_box{
+    display: flex;
+    flex-basis: 85%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.about .left .img_box img{
+    width: 100%;
+    border: 20px solid #1B1A19;
+    border-radius: 10px;
+    
+}
+.about .left .img_box img.hero_skill_logo{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+.about .left .img_box img.hero_skill_logo_wp{
+    top: -15px;
+    left: -15px;
+}
+.about .left .img_box img.hero_skill_logo_js{
+    top: -15px;
+    right: -15px;
+}
+
+.about .left .img_box img.hero_skill_logo_php{
+    bottom: -15px;
+    right: -15px;
+}
+.about .left .img_box .hero_skill_text{
+    position: absolute;
+    bottom: -20px;
+    left: -40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 2px #000;
+}
+.about .left .img_box .hero_skill_text .hero_skill_text_left i{
+    color: var(--color-one);
+    font-size: var(--h2-font-size);
+    padding-right: 10px;
+}
+.about .left .img_box .hero_skill_text .hero_skill_text_right h3{
+    font-size: var(--h3-font-size);
+}
+.about .left .img_box .hero_skill_text .hero_skill_text_right span{
+    font-size: var(--p-font-size);
+}
 /*--=============skills end====================--*/
 /*--=============priceing start====================--*/
 .pricing{
@@ -651,7 +719,7 @@ h1, h2, h3, h4, h5, h6, span{
 /*--=============page intro start====================--*/
 .page_into{
 background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-title2.jpg);
-    height: 40vh;
+    height: 25vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -667,9 +735,8 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 }
 .page_into .text h2{
     color: var(--text-color);
-    font-size: 60px;
-    margin-bottom: 30px;
-    padding-top: 50px;
+    font-size: var(--h2-font-size);
+    padding: 30px 0;
 }
 .page_into .text p{
     color: var(--text-color);
@@ -1356,71 +1423,7 @@ background-color: var(--color-one);
     width:auto;
 }
 /*--=============brand_logo end====================--*/
-/*--============= skills start====================--*/
 
-.skills .left{
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
-.skills .left .img_box{
-    display: flex;
-    flex-basis: 85%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.skills .left .img_box img{
-    width: 100%;
-    border: 20px solid #1B1A19;
-    border-radius: 10px;
-    
-}
-.skills .left .img_box img.hero_skill_logo{
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border: 10px solid #fff;
-    background-color: #fff;
-}
-.skills .left .img_box img.hero_skill_logo_wp{
-    top: -15px;
-    left: -15px;
-}
-.skills .left .img_box img.hero_skill_logo_js{
-    top: -15px;
-    right: -15px;
-}
-
-.skills .left .img_box img.hero_skill_logo_php{
-    bottom: -15px;
-    right: -15px;
-}
-.skills .left .img_box .hero_skill_text{
-    position: absolute;
-    bottom: -20px;
-    left: -40px;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    box-shadow: 0px 0px 2px #000;
-}
-.skills .left .img_box .hero_skill_text .hero_skill_text_left i{
-    color: var(--color-one);
-    font-size: var(--h2-font-size);
-    padding-right: 10px;
-}
-.skills .left .img_box .hero_skill_text .hero_skill_text_right h3{
-    font-size: var(--h3-font-size);
-}
-.skills .left .img_box .hero_skill_text .hero_skill_text_right span{
-    font-size: var(--p-font-size);
-}
 /*--============= skills end====================--*/
 /*--============= portfolio start====================--*/
 

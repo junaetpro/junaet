@@ -12,7 +12,6 @@
     --color-one:#59C378;
     --color-two:#FFE600;
     --text-color:#fff;
-
 }
 
 .nav_area{
@@ -61,6 +60,11 @@
 .about .right .skills_col{
     grid-template-rows: 130px 130px;
     gap: 20px;
+}
+
+.about .left .img_box img.hero_skill_logo{
+    height: 80px;
+    width: 80px;
 }
 /*=================service===================*/
 /*=================experience===================*/
@@ -148,6 +152,11 @@
 .hero_area .hero_single_col .right .img_box .hero_skill_text .hero_skill_text_right span{
     font-size: var(--p-mini-font-size);
 }
+
+/*--=============page intro start====================--*/
+.page_into{
+    height: 20vh;
+}
 /*=================about===================*/
 .about .left .main_box h1{
     font-size: 60px;
@@ -163,6 +172,15 @@
 .about .right .skills_col{
     grid-template-rows: 120px 120px;
     gap: 15px;
+}
+
+
+.about .left .img_box img{
+    border: 10px solid #1B1A19;
+    
+}
+.about .left .img_box img.hero_skill_logo{
+    border: 3px solid #fff;
 }
 
 /*=================Service===================*/
@@ -363,6 +381,14 @@
     padding-right: 10px;
 }
 
+.page_into{
+    height: 15vh;
+}
+
+.page_into .text h2{
+    padding: 20px 0;
+}
+
 /*=================about===================*/
 .about .left .main_box{
     width: 85%;
@@ -380,6 +406,18 @@
 }
 .about .right .skills_col .skill_box_border{
     padding: 2px;
+}
+
+.about .left .img_box img.hero_skill_logo{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+.about .left .img_box .hero_skill_text{
+    bottom: -20px;
+    left: -20px;
+    padding: 10px;
 }
 
 /*=================service===================*/
@@ -552,6 +590,15 @@
     text-align: center;
     
 }
+
+
+.page_into{
+    height: 10vh;
+}
+
+.page_into .text h2{
+    padding: 15px 0;
+}
 /*=================about===================*/
 .about{
     display: flex;
@@ -599,6 +646,28 @@
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+}
+
+
+.about .left .img_box{
+    flex-basis: 70%;
+    margin: auto;
+    margin-top: 30px;
+}
+.about .left .img_box img{
+    width: 100%;
+    border: 15px solid #1B1A19;
+    border-radius: 10px;
+    
+}
+.about .left .img_box img.hero_skill_logo{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+}
+
+.about .left .img_box .hero_skill_text{
+    padding: 10px ;
 }
 /*=================Service===================*/
 
@@ -755,6 +824,14 @@ margin-top: 40px;
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo, .hero_area .hero_single_col .right .img_box .hero_skill_text{
     display: none;
 }
+
+.page_into{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/page-title2.jpg);
+    height: 12vh;
+    background-position: right;
+    position: relative;
+}
+
 /*=================about===================*/
 .about .left .main_box{
     width: 90%;
@@ -763,6 +840,21 @@ margin-top: 40px;
 .about .right .skills_col{
     width: 90%;
     gap: 10px;
+}
+
+
+.about .left .img_box img.hero_skill_logo{
+    height: 40px;
+    width: 40px;
+}
+.about .left .img_box .hero_skill_text{
+    padding: 10px;
+}
+.about .left .img_box .hero_skill_text{
+    text-align: center;
+}
+.about .left .img_box .hero_skill_text .hero_skill_text_left i{
+    display: none;
 }
 /*=================Service===================*/
 .Service .service_btn_area button{
@@ -775,6 +867,7 @@ margin-top: 40px;
     margin: 5px;
     padding: 30px 10px;
 }
+
 
 /*=================experience===================*/
 .experience .experience_row .experience_col{
