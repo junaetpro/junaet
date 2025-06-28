@@ -277,6 +277,10 @@
 .brand_logo{
     padding-block: 30px;
 }
+
+.portfolio .portfolio_area{
+    gap: 15px;
+}
 }
 @media  (max-width: 800px) {
 /*=================root===================*/
@@ -500,6 +504,13 @@
     padding: 10px;
     width: 50%;
     margin: auto;
+}
+
+.portfolio .portfolio_area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
 }
 }
 @media  (max-width: 600px) {
@@ -975,6 +986,15 @@ width: 50%;
 }
 .brand_logo .brand_logo_swiper .col img{
     width:50%;
+    
+}
+
+
+.portfolio .portfolio_area{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
     
 }
 }

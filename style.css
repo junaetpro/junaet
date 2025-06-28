@@ -1429,7 +1429,7 @@ background-color: var(--color-one);
 /*--============= portfolio start====================--*/
 
 .portfolio{
-    padding-block: 80px;
+    padding: var(--section-padding);
     background-color: #222121;
 }
 .portfolio .btn_area{
@@ -1520,7 +1520,8 @@ background-color: var(--color-one);
     width: fit-content;
     border-radius: 50px;
     outline: 1px solid #ffffff5b;
-    outline-offset: 5px;
+    outline-offset: 3px;
+    font-size: var(--p-font-size);
 }
 
 /*--============= portfolio end====================--*/
