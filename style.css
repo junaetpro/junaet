@@ -1559,3 +1559,12 @@ background-color: var(--color-one);
     transform: translateY(-5px);
 }
 /*--============= scroll top end====================--*/
+
+
+.warning_updateing{
+    padding: var(--section-padding);
+
+}
+.warning_updateing h2{
+    font-size: var(--h2-font-size);
+}
