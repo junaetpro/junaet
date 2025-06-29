@@ -1563,6 +1563,8 @@ background-color: var(--color-one);
 
 .warning_updateing{
     padding: var(--section-padding);
+    background-color: #000;
+    color: var(--text-color);
 
 }
 .warning_updateing h2{
