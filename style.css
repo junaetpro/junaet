@@ -117,21 +117,21 @@ h1, h2, h3, h4, h5, h6, span{
 }
 .hero_area .hero_single_col .left span{
     color: var(--color-two);
-    font-size: var(--h2-font-size);
+    font-size: var(--h3-font-size);
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .hero_area .hero_single_col .left h1{
     color: var(--text-color);
     font-size: 90px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     text-shadow: 0px 0px 10px #000000;
 }
 
 .hero_area .hero_single_col .left h2{
     color: var(--color-one);
-    font-size: var(--h2-font-size);
-    margin-bottom: 20px;
+    font-size: var(--spacial-text);
+    margin-bottom: 10px;
 }
 
 .hero_area .hero_single_col .left p{
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6, span{
 }
 .hero_area .hero_single_col .right .img_box{
     display: flex;
-    flex-basis: 80%;
+    flex-basis: 70%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -174,9 +174,9 @@ h1, h2, h3, h4, h5, h6, span{
 }
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo{
     position: absolute;
-    height: 110px;
-    width: 110px;
-    border: 10px solid var(--text-color);
+    height: 90px;
+    width: 90px;
+    border: 8px solid var(--text-color);
     background-color: var(--text-color);
 }
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo_wp{
@@ -768,7 +768,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 .experience .text_area p{
     line-height: var(--p-line-hight);
     font-size: var(--p-font-size);
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
@@ -1309,32 +1309,70 @@ background-color: var(--color-one);
 .Service .text_area p{
     line-height: var(--p-line-hight);
     font-size: var(--p-font-size);
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.Service .btn_src{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0 50px;
+    flex-wrap: wrap;
+}
+.Service .btn_src .service_btn_area{
+    flex-basis: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    
+}
+.Service .btn_src .service_btn_area button{
+    margin: 10px;
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    background-color: #505050;
+    color: var(--text-color);
+    border-radius: 1px solid #505050;
+    border-radius: 50px;
+    font-size: var(--p-font-size);
+}
+.Service .btn_src .service_btn_area button.active{
+    background-color: transparent;
+    border: 1px solid var(--color-one);
 }
 
-.Service .service_btn_area{
+.Service .btn_src .src_area{
+    flex-basis: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 30px 0 50px;
-    flex-wrap: wrap;
 }
-.Service .service_btn_area button{
-    width: 200px;
-    margin: 10px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: none;
-    outline: none;
-    font-size: var(--h4-font-size);
-    text-transform: capitalize;
-    background-color: #373737;
-    color: var(--text-color);
-    border: 1px solid #00000000;
+.Service .btn_src .src_area .src_box{
+
+    border: 1px solid #026131;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
-.Service .service_btn_area button.active{
-    background-color: transparent;
-    border: 1px solid var(--color-one);
+.Service .btn_src .src_area .src_box i{
+    font-size: var(--p-font-size);
     color: var(--color-two);
+    margin-right: 10px;
+    flex-basis: 5%;
+}
+.Service .btn_src .src_area input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--text-color);
+    font-size: var(--p-font-size);
+    padding: 3px 0;
+    flex-basis: 80%;
 }
 
 .Service .service_area{
@@ -1544,6 +1582,7 @@ background-color: var(--color-one);
     color: #fff;
     bottom: 25px;
     right: 25px;
+    transition: .3s;
     
 }
 .scroll_top .s_t_btn{
@@ -1551,7 +1590,7 @@ background-color: var(--color-one);
     background-color: var(--color-one);
     border-radius: 50%;
     border: 1px solid #08b860;
-    font-size: 30px;
+    font-size: 20px;
     display: none;
     transition: .3s;
 }
@@ -1569,4 +1608,54 @@ background-color: var(--color-one);
 }
 .warning_updateing h2{
     font-size: var(--h2-font-size);
+}
+
+
+.social_link{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: fixed;
+    right: -44px;
+    top: 60%;
+    width: 80px;
+    transition: .4s;
+}
+.social_link .left{
+    background-color: #fff;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    padding: 5px 0 5px 5px;
+    flex-basis: 50%;
+}
+.social_link .left i{
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+.social_link .right{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    flex-basis: 50%;
+    border-top-left-radius: 5px;
+}
+.social_link .right a i{
+    font-size: 23px;
+    display: inline-block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.social_link .right a:nth-child(1){
+    color: #1877f2;
+}
+.social_link .right a:nth-child(2){
+    color: #000;
+}
+.social_link .right a:nth-child(3){
+    color: #0077B5;
+}
+.social_link .right a:nth-child(4){
+    color: #FF0000;
 }

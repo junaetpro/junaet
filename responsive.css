@@ -185,8 +185,20 @@
 
 /*=================Service===================*/
 
-.Service .service_btn_area button{
-    width: 150px;
+.Service .btn_src .service_btn_area{
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.Service .btn_src .service_btn_area button{
+    margin: 10px;
+}
+.Service .btn_src .src_area{
+    flex-basis: 100%;
+}
+.Service .btn_src .src_area .src_box{
+    width: 40%;
+    justify-content: start;
 }
 
 .Service .service_area .service_box{
@@ -723,14 +735,8 @@
 }
 /*=================Service===================*/
 
-.Service .service_btn_area{
-    margin: 30px 0px ;
-}
-.Service .service_btn_area button{
-    width: 120px;
-    font-size: var(--h4-font-size);
-    margin: 5px;
-    padding: 8px 10px;
+.Service .btn_src .src_area .src_box{
+    width: 60%;
 }
 .Service .service_area .service_box{
     flex-basis: 45%;
@@ -957,10 +963,7 @@ margin-top: 40px;
     display: none;
 }
 /*=================Service===================*/
-.Service .service_btn_area button{
 
-    font-size: var(--p-font-size);
-}
 
 .Service .service_area .service_box{
     flex-basis: 47%;

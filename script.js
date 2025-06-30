@@ -41,6 +41,22 @@ service_btn.forEach((btn)=>{
     })
 })
 
+
+function src_service(){
+    let service_src= document.getElementById("service_src").value.toLocaleLowerCase();
+    console.log(service_src)
+    let service_box= document.querySelectorAll(".Service .service_area .service_box")
+
+    service_box.forEach((service)=>{
+        let service_title= service.querySelector(".Service .service_area .service_box h3").innerHTML.toLocaleLowerCase()
+        if(service_title.includes(service_src)){
+            service.style.display="flex"
+        }else{
+            service.style.display="none"
+        }
+    })
+}
+
 //==============================
 
 var portfolio_btn= document.querySelectorAll(".portfolio .btn_area button")
@@ -68,7 +84,7 @@ portfolio_btn.forEach((btn)=>{
 
 var hero_right_count= document.querySelector(".hero_area .right .hero_skill_text .hero_right_count")
 var hero_right_count_start= 0;
-var hero_right_count_end= 50;
+var hero_right_count_end= 30;
 var count_speed= 20;
 
 var hero_right_count_fn= setInterval(()=>{
@@ -83,28 +99,28 @@ var hero_right_count_fn= setInterval(()=>{
 
 
 // Select all skill counters (1st set)
-var skill_s1_count = document.querySelector(".skills .right .skills_col .s1_count");
-var skill_s2_count = document.querySelector(".skills .right .skills_col .s2_count");
-var skill_s3_count = document.querySelector(".skills .right .skills_col .s3_count");
-var skill_s4_count = document.querySelector(".skills .right .skills_col .s4_count");
-var skill_s5_count = document.querySelector(".skills .right .skills_col .s5_count");
-var skill_s6_count = document.querySelector(".skills .right .skills_col .s6_count");
+var skill_s1_count = document.querySelector(".about .right .skills_col .s1_count");
+var skill_s2_count = document.querySelector(".about .right .skills_col .s2_count");
+var skill_s3_count = document.querySelector(".about .right .skills_col .s3_count");
+var skill_s4_count = document.querySelector(".about .right .skills_col .s4_count");
+var skill_s5_count = document.querySelector(".about .right .skills_col .s5_count");
+var skill_s6_count = document.querySelector(".about .right .skills_col .s6_count");
 
 // Select all skill counters (2nd set)
-var skill_s1_count2 = document.querySelector(".skills .right .skills_col .s1_count2");
-var skill_s2_count2 = document.querySelector(".skills .right .skills_col .s2_count2");
-var skill_s3_count2 = document.querySelector(".skills .right .skills_col .s3_count2");
-var skill_s4_count2 = document.querySelector(".skills .right .skills_col .s4_count2");
-var skill_s5_count2 = document.querySelector(".skills .right .skills_col .s5_count2");
-var skill_s6_count2 = document.querySelector(".skills .right .skills_col .s6_count2");
+var skill_s1_count2 = document.querySelector(".about .right .skills_col .s1_count2");
+var skill_s2_count2 = document.querySelector(".about .right .skills_col .s2_count2");
+var skill_s3_count2 = document.querySelector(".about .right .skills_col .s3_count2");
+var skill_s4_count2 = document.querySelector(".about .right .skills_col .s4_count2");
+var skill_s5_count2 = document.querySelector(".about .right .skills_col .s5_count2");
+var skill_s6_count2 = document.querySelector(".about .right .skills_col .s6_count2");
 
 // Define end values for each skill
 var skill_s1_count_end = 90;
 var skill_s2_count_end = 95;
 var skill_s3_count_end = 97;
 var skill_s4_count_end = 90;
-var skill_s5_count_end = 91;
-var skill_s6_count_end = 94;
+var skill_s5_count_end = 95;
+var skill_s6_count_end = 99;
 
 // Speed of counting (in ms)
 var skill_count_speed = 20;
@@ -146,3 +162,44 @@ animateCounter(skill_s6_count2, skill_s6_count_end);
     window.onscroll = () => {
       topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
     };
+
+    
+
+const socialLink = document.querySelector('.social_link');
+const leftPart = document.querySelector('.social_link .left');
+const rightPart = document.querySelector('.social_link .right');
+leftPart.addEventListener('mouseenter', () => {
+    socialLink.style.right = '0';
+});
+rightPart.addEventListener('mouseenter', () => {
+    socialLink.style.right = '0';
+});
+leftPart.addEventListener('mouseleave', () => {
+    socialLink.style.right = '-44px';
+});
+rightPart.addEventListener('mouseleave', () => {
+    socialLink.style.right = '-44px';
+});
+
+let scrollTimeout;
+let hover = false;
+function hideSocial() {
+    if (!hover) {
+        socialLink.style.display = 'none';
+    }
+}
+setTimeout(hideSocial, 5000);
+window.addEventListener('scroll', () => {
+    socialLink.style.display = 'flex';  // show it
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(hideSocial, 5000);  // hide 5s after scroll stops
+});
+socialLink.addEventListener('mouseenter', () => {
+    hover = true;
+    clearTimeout(scrollTimeout); // prevent hiding while hovered
+});
+
+socialLink.addEventListener('mouseleave', () => {
+    hover = false;
+    scrollTimeout = setTimeout(hideSocial, 5000); // start timer again
+});
