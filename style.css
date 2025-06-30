@@ -1471,7 +1471,7 @@ background-color: var(--color-one);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     flex-wrap: wrap;
 }
 .portfolio .btn_area button{
@@ -1487,6 +1487,36 @@ background-color: var(--color-one);
     color: var(--color-one);
 }
 
+
+.portfolio_src_area{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+.portfolio_src_area .src_box{
+    border: 1px solid var(--color-one);
+    border-radius: 10px;
+    padding: 5px 15px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.portfolio_src_area .src_box i{
+    flex-basis: 5%;
+    color: var(--color-two);
+    font-size: var(--p-font-size);
+}
+.portfolio_src_area .src_box input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    padding: 3px;
+    font-size: var(--p-font-size);
+    flex-basis: 90%;
+}
+
 .portfolio .portfolio_area{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1497,6 +1527,7 @@ background-color: var(--color-one);
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
 
 }
 .portfolio .portfolio_area .p_box img{
@@ -1542,10 +1573,11 @@ background-color: var(--color-one);
 .portfolio .portfolio_area .p_box .text_come_bottom h3{
     padding-bottom: 10px;
     font-weight: 500;
+    font-size: var(--h4-font-size);
 }
 .portfolio .portfolio_area .p_box .text_come_bottom span{
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: var(--p-mini-font-size);
 }
 .portfolio .portfolio_area .p_box .text_come_bottom a{
     color: #fff;

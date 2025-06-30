@@ -842,6 +842,10 @@ margin-top: 40px;
     flex-basis: 28%;
 }
 
+.portfolio_src_area .src_box{
+    width: 70%;
+}
+
 .portfolio .portfolio_area{
     display: grid;
     grid-template-columns: 1fr 1fr;

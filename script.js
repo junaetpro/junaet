@@ -46,7 +46,6 @@ function src_service(){
     let service_src= document.getElementById("service_src").value.toLocaleLowerCase();
     console.log(service_src)
     let service_box= document.querySelectorAll(".Service .service_area .service_box")
-
     service_box.forEach((service)=>{
         let service_title= service.querySelector(".Service .service_area .service_box h3").innerHTML.toLocaleLowerCase()
         if(service_title.includes(service_src)){
@@ -56,6 +55,7 @@ function src_service(){
         }
     })
 }
+
 
 //==============================
 
@@ -79,6 +79,21 @@ portfolio_btn.forEach((btn)=>{
         })
     })
 })
+
+function src_portfolio(){
+    let portfolio_src= document.getElementById("portfolio_src").value.toLocaleLowerCase()
+    console.log(portfolio_src)
+    let portfolio_box= document.querySelectorAll(".portfolio .portfolio_area .p_box")
+    portfolio_box.forEach((portfolio)=>{
+        let portfolio_title=portfolio.querySelector(".portfolio .portfolio_area .p_box .text_come_bottom h3").innerHTML.toLocaleLowerCase()
+        if(portfolio_title.includes(portfolio_src)){
+            portfolio.style.display="flex"
+        }else{
+            portfolio.style.display="none"
+        }
+    })
+
+}
 
 //===========progress countion==========
 
