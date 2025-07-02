@@ -109,3 +109,43 @@ const swiper4 = new Swiper('.brand_logo_swiper', {
 
 
 });
+
+
+function open_img(img){
+  let full_img_box= document.querySelector(".gallery .img_show")
+  let full_img= document.querySelector(".gallery .img_show .img_box img")
+    full_img_box.style.display="flex"
+    full_img.src=img
+}
+function full_img_box_close(){
+    let full_img_box= document.querySelector(".gallery .img_show")
+    full_img_box.style.display="none"
+}
+
+const gallery_btn= document.querySelectorAll(".gallery .btn_area button")
+const gallery_botoom_img= document.querySelectorAll(".gallery .img_area .img_box")
+gallery_btn.forEach((btn)=>{
+    btn.addEventListener("click", (e)=>{
+        console.log(e.target)
+        const gallery_filter= e.target.dataset.filter
+        console.log(gallery_filter)
+
+        gallery_btn.forEach((button) => {
+            button.classList.remove("active"); // Remove active class from all buttons
+        });
+        e.target.classList.add("active");
+
+        gallery_botoom_img.forEach((img)=>{
+            if(gallery_filter==="all"){
+                img.style.display="flex";
+            }else{
+                if(img.classList.contains(gallery_filter)){
+                    img.style.display="flex"
+                }else{
+                    img.style.display="none"
+                }
+            }
+        })
+    })
+})
+

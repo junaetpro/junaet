@@ -1691,3 +1691,117 @@ background-color: var(--color-one);
 .social_link .right a:nth-child(4){
     color: #FF0000;
 }
+
+
+.gallery{
+    padding: var(--section-padding);
+    background-color:#00351b;
+}
+
+.gallery .img_show{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    z-index: 7;
+    display: none;
+}
+.gallery .img_show .img_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        height: 80%;
+
+}
+.gallery .img_show .img_box img{
+ width: auto;
+ height: 100%;
+ object-fit: cover;
+}
+.gallery .img_show .img_box .btn_common{
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid var(--color-one);
+    transition: .3s;
+}
+.gallery .img_show .img_box .btn_common:hover{
+    background-color: var(--color-one);
+}
+
+.gallery .title_area{
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--text-color);
+}
+.gallery .title_area h2{
+    font-size: var(--h2-font-size);
+    margin-bottom: 15px;
+
+}
+.gallery .title_area p{
+    font-size: var(--p-font-size);
+    width: 70%;
+    margin: auto;
+    line-height: var(--p-line-hight);
+
+}
+
+.gallery .btn_area{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .btn_area button{
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    border: 1px solid #00000000;
+    background-color: #434343;
+    font-size: var(--p-font-size);
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+.gallery .btn_area button.active{
+    border: 1px solid var(--color-one);
+    background-color: transparent;
+}
+
+.gallery .img_area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 250px);
+    gap: 15px;
+}
+.gallery .img_area .img_box{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s;
+}
+.gallery .img_area .img_box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .3s;
+} 
+.gallery .img_area .img_box:hover img{
+    transform: scale(1.1) 
+}
+.gallery .img_area .img_box:hover{
+    transform: rotate(2deg);
+    transition: .3s;
+}
