@@ -48,10 +48,29 @@
                 <span>hello,</span>
                 <h1>i am junaet</h1>
                 <h2>Full Stack Web Developer </h2>
-                <p>Passionate and creative Full Stack Web Developer specializing in building dynamic, user-friendly websites and applications. Proven track record of delivering real-world projects that showcase strong technical skills and practical experience. Proficient in WordPress, with the ability to develop and customize themes, plugins, and full-featured websites. Currently working as a Project QA Executive, where I ensure the highest quality standards by thoroughly testing and collaborating with development teams to deliver flawless solutions.</p>
-
+                <p id="hero_p_short_text">Passionate and creative Full Stack Web Developer specializing in building dynamic, user-friendly websites and applications. Proven track record ... <a href="#" id="hero_show_more_btn" onclick="hero_show_text()">Show More</a></p>
+                <p id="hero_p_full_text" style="display: none;">Passionate and creative Full Stack Web Developer specializing in building dynamic, user-friendly websites and applications. Proven track record of delivering real-world projects that showcase strong technical skills and practical experience. Proficient in WordPress, with the ability to develop and customize themes, plugins, and full-featured websites. Currently working as a Project QA Executive, where I ensure the highest quality standards by thoroughly testing and collaborating with development teams to deliver flawless solutions. <a href="#" onclick="hero_show_text()" id="hero_show_more_btn">Show less</a></p>
+                
                 <a href="" class="btn_common">hire me <i class="ri-arrow-right-line"></i></a>
             </div>
+
+            <script>
+                function hero_show_text(){
+                    const hero_p_short_text= document.getElementById("hero_p_short_text");
+                    const hero_p_full_text= document.getElementById("hero_p_full_text");
+                    const hero_show_more_btn= document.getElementById("hero_show_more_btn");
+
+                    if(hero_p_full_text.style.display==="none"){
+                        hero_p_short_text.style.display="none";
+                        hero_p_full_text.style.display="block";
+
+                    }else{
+                        hero_p_short_text.style.display="block";
+                        hero_p_full_text.style.display="none";
+                    }
+
+                }
+            </script>
             <div class="right">
                 <div class="img_box">
                     <img src="img/1.jpg" alt="">

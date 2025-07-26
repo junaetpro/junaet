@@ -21,7 +21,7 @@ const swiper = new Swiper('.blog_area_slide_warper', {
     700: {
       slidesPerView: 3,
     },
-    300:{
+    330:{
       slidesPerView: 2,
     },
     0:{
