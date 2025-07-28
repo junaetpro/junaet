@@ -1131,7 +1131,12 @@ width: 50%;
 /*=================home===================*/
 .hero_area{
     padding: 50px 3% 30px;
+    min-height: 70vh;
     
+}
+
+.hero_area .hero_single_col .right .img_box{
+    flex-basis: 60%;
 }
 /*=================about===================*/
 .about .left .main_box .sub_box_border .sub_box{
