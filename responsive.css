@@ -582,7 +582,7 @@ body{
     --h2-font-size:26px;
     --h3-font-size:17px;
     --h4-font-size:14px;
-    --spacial-text:24px;
+    --spacial-text:22px;
     --color-one:#59C378;
     --color-two:#FFE600;
     --text-color:#fff;
@@ -899,6 +899,15 @@ margin-top: 40px;
     width: 100%;
     height: 300px;
 }
+
+.project_section .main_img_area{
+    border: 1px solid #00351b;
+    width: 80%;
+    padding: 5px;
+}
+
+
+
 }
 @media  (max-width: 440px) {
 
@@ -911,7 +920,7 @@ margin-top: 40px;
     --h2-font-size:26px;
     --h3-font-size:17px;
     --h4-font-size:14px;
-    --spacial-text:24px;
+    --spacial-text:20px;
     --color-one:#59C378;
     --color-two:#FFE600;
     --text-color:#fff;
@@ -936,9 +945,7 @@ margin-top: 40px;
     justify-content: center;
     padding-bottom: 10px;
 }
-.hero_area .hero_single_col .right .img_box{
-    flex-basis: 60%;
-}
+
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo, .hero_area .hero_single_col .right .img_box .hero_skill_text{
     display: none;
 }
@@ -1112,6 +1119,19 @@ width: 50%;
     gap: 10px;
 }
 
+.project_section .main_img_area .main_img_btn_area{
+    padding: 20px 0;
+}
+.project_section .main_img_area .main_img_btn_area a{
+    padding: 4px 8px;
+    margin: 5px;
+}
+
+.project_section .video_section iframe{
+    border-radius: 10px;
+    width: 350px;
+    height: 200px;
+}
 
 }
 @media  (max-width: 330px) {
