@@ -936,7 +936,9 @@ margin-top: 40px;
     justify-content: center;
     padding-bottom: 10px;
 }
-
+.hero_area .hero_single_col .right .img_box{
+    flex-basis: 60%;
+}
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo, .hero_area .hero_single_col .right .img_box .hero_skill_text{
     display: none;
 }
@@ -1135,9 +1137,7 @@ width: 50%;
     
 }
 
-.hero_area .hero_single_col .right .img_box{
-    flex-basis: 60%;
-}
+
 /*=================about===================*/
 .about .left .main_box .sub_box_border .sub_box{
     padding: 10px ;
