@@ -404,6 +404,7 @@
     justify-content: start;
     flex-direction: column;
     padding-top: 50px;
+    height: 60%;
 }
 
 .hero_area .hero_single_col .left span{
@@ -421,6 +422,7 @@
 .hero_area .hero_single_col .right{
     width: 100%;
     align-items: end;
+    height: 37%;
 }
 .hero_area .hero_single_col .right .img_box{
     flex-basis: 45%;
