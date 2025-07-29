@@ -904,9 +904,12 @@ margin-top: 40px;
     --text-color:#fff;
 
 }
+.hero_area{
+    height: 90vh;
+}
 
 .hero_area .hero_single_col .right .img_box{
-    flex-basis: 62%;
+    flex-basis: 60%;
 }
 
 .page_into{
