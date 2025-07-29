@@ -907,7 +907,7 @@ margin-top: 40px;
 
 }
 .hero_area{
-    height: 100vh;
+    min-height: 95vh;
 }
 
 .hero_area .hero_single_col .right .img_box{
