@@ -1,3 +1,4 @@
+
 window.addEventListener("scroll", ()=>{
     var nav_bg_color= document.getElementById("nav_area");
     if(window.scrollY>100){
@@ -96,6 +97,11 @@ function src_portfolio(){
 }
 //-----
 
+
+
+
+
+
 //===========progress countion==========
 
 var hero_right_count= document.querySelector(".hero_area .right .hero_skill_text .hero_right_count")
@@ -172,6 +178,11 @@ animateCounter(skill_s5_count2, skill_s5_count_end);
 animateCounter(skill_s6_count, skill_s6_count_end);
 animateCounter(skill_s6_count2, skill_s6_count_end);
 
+
+
+
+
+
 //===============================================
 
     const topBtn = document.getElementById("topBtn");
@@ -179,43 +190,26 @@ animateCounter(skill_s6_count2, skill_s6_count_end);
       topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
     };
 
+
+
+const questions = document.querySelectorAll(".FAQ_main .box .question");
+const answers = document.querySelectorAll(".FAQ_main .box .answer");
+
+questions.forEach((q, index) => {
+            q.addEventListener("click", () => {
+            answers.forEach((ans, i) => {
+                if (i !== index) {
+                ans.classList.remove("active");
+                questions[i].querySelector("i").classList.remove("rotate");
+
+                }
+            });
+            answers[index].classList.toggle("active");
+            q.querySelector("i").classList.toggle("rotate");
+
+            });
+});
+
+
     
 
-const socialLink = document.querySelector('.social_link');
-const leftPart = document.querySelector('.social_link .left');
-const rightPart = document.querySelector('.social_link .right');
-leftPart.addEventListener('mouseenter', () => {
-    socialLink.style.right = '0';
-});
-rightPart.addEventListener('mouseenter', () => {
-    socialLink.style.right = '0';
-});
-leftPart.addEventListener('mouseleave', () => {
-    socialLink.style.right = '-44px';
-});
-rightPart.addEventListener('mouseleave', () => {
-    socialLink.style.right = '-44px';
-});
-
-let scrollTimeout;
-let hover = false;
-function hideSocial() {
-    if (!hover) {
-        socialLink.style.display = 'none';
-    }
-}
-setTimeout(hideSocial, 5000);
-window.addEventListener('scroll', () => {
-    socialLink.style.display = 'flex';  // show it
-    clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(hideSocial, 5000);  // hide 5s after scroll stops
-});
-socialLink.addEventListener('mouseenter', () => {
-    hover = true;
-    clearTimeout(scrollTimeout); // prevent hiding while hovered
-});
-
-socialLink.addEventListener('mouseleave', () => {
-    hover = false;
-    scrollTimeout = setTimeout(hideSocial, 5000); // start timer again
-});

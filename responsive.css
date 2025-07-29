@@ -329,9 +329,7 @@
 }
 
 
-body{
-    background-color: #1B1A19;
-}
+
 .nav_area{
     padding: 5px 5%;
     background-color: rgba(0, 0, 0, 0.7);
@@ -569,6 +567,11 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 150px);
     gap: 15px;
+}
+
+.project_section .FAQ_main .box{
+    width: 90%;
+    padding: 10px;
 }
 }
 @media  (max-width: 600px) {
@@ -1131,6 +1134,18 @@ width: 50%;
     border-radius: 10px;
     width: 350px;
     height: 200px;
+}
+
+.why_choose_main_div .col{
+    flex-basis: 90%;
+    background-color: #58585860;
+    margin: 5px;
+    padding: 7px;
+    border-radius: 10px;
+    display: flex;
+}
+.project_section .FAQ_main .box{
+    width: 100%;
 }
 
 }
