@@ -905,11 +905,11 @@ margin-top: 40px;
 
 }
 .hero_area{
-    height: 90vh;
+    height: 100vh;
 }
 
 .hero_area .hero_single_col .right .img_box{
-    flex-basis: 60%;
+    flex-basis: 56%;
 }
 
 .page_into{
