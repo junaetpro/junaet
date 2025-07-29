@@ -14,9 +14,17 @@ window.addEventListener("scroll", ()=>{
 //=================================
   const menuBtn = document.querySelector('.menu_btn');
   const menuArea = document.querySelector('.menu_btn_area');
+  
 
   menuBtn.addEventListener('click', () => {
     menuArea.classList.toggle('active');
+    if(menuBtn.classList.contains("ri-menu-line")){
+        menuBtn.classList.remove("ri-menu-line")
+        menuBtn.classList.add("ri-close-line")
+    }else{
+        menuBtn.classList.add("ri-menu-line")
+        menuBtn.classList.remove("ri-close-line")
+    }
   });
 
 //=========================================================

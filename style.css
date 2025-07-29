@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, span{
     --p-font-size: 16px;
     --p-mini-font-size:14px;
     --h2-font-size:40px;
-    --h3-font-size:22px;
+    --h3-font-size:24px;
     --h4-font-size:18px;
     --spacial-text:32px;
     --color-one:#59C378;
@@ -1453,6 +1453,22 @@ background-color: var(--color-one);
 .Service .service_area .service_box a:hover i{
     margin-left: 10px;
 }
+
+.Service .service_more_btn_area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Service .service_view_more_btn{
+    margin-top: 40px;
+    transition: .3s;
+    padding: 10px 20px;
+}
+.Service .service_view_more_btn:hover{
+    color: var(--color-two);
+}
+
+
 /*--=============service end====================--*/
 /*--=============brand_logo start====================--*/
 
@@ -1788,6 +1804,7 @@ background-color: var(--color-one);
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 }
 .project_section .main_img_area .img_box{
     overflow: hidden;
@@ -1838,11 +1855,11 @@ background-color: var(--color-one);
 .project_section .project_main_dec{
     font-size: var(--p-font-size);
     line-height: var(--p-line-hight);
-    margin-bottom: 40px;
 }
 .project_section .project_main_sub_title{
-    font-size: var(--h3-font-size);
-    margin-bottom: 10px;
+    font-size: var(--h2-font-size);
+    margin: 80px 0 30px ;
+    text-align: center;
 }
 .project_section ul{
     margin-bottom: 50px;
@@ -1857,7 +1874,6 @@ background-color: var(--color-one);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .project_section .video_section iframe{
@@ -1875,7 +1891,6 @@ background-color: var(--color-one);
 }
 .why_choose_main_div .col{
     flex-basis: 40%;
-    background-color: #58585860;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
@@ -1926,7 +1941,7 @@ background-color: var(--color-one);
 
 }
 .project_section .FAQ_main .box{
-    background-color: #171a19;
+    background-color: #026131;
     
     width: 70%;
     border-radius: 10px;
@@ -1938,7 +1953,7 @@ background-color: var(--color-one);
     align-items: center;
     justify-content: space-between;
     font-size: var(--h4-font-size);
-    color: #08b860;
+    color: var(--color-two);
     padding: 10px;
     cursor: pointer;
 }
