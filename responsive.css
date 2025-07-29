@@ -392,6 +392,8 @@
 .hero_area{
     width: 100%;
     height: 90vh;
+    padding: 0px 5%;
+    
 }
 .hero_area .hero_single_col{
     flex-direction: column-reverse;
@@ -404,7 +406,8 @@
     justify-content: start;
     flex-direction: column;
     padding-top: 50px;
-    height: 60%;
+    flex-basis: 60%;
+
 }
 
 .hero_area .hero_single_col .left span{
@@ -418,11 +421,9 @@
     margin-bottom: 20px;
 }
 
-
 .hero_area .hero_single_col .right{
     width: 100%;
     align-items: end;
-    height: 37%;
 }
 .hero_area .hero_single_col .right .img_box{
     flex-basis: 45%;
@@ -634,7 +635,10 @@
 
 /*=================home===================*/
 .hero_area{
-    height: 80vh;
+    height: 100vh;
+}
+.hero_area .hero_single_col .left{
+    padding-top: 50px;
 }
 .hero_area .hero_single_col .left h1{
     font-size: 30px;
@@ -642,7 +646,10 @@
 .hero_area .hero_single_col .left h2{
     font-size: var(--h4-font-size);
 }
-
+.hero_area .hero_single_col .right .img_box{
+    display: flex;
+    flex-basis: 30%;
+}
 
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo, .hero_area .hero_single_col .right .img_box .hero_skill_text{
     display: none;
@@ -907,12 +914,16 @@ margin-top: 40px;
 
 }
 .hero_area{
-    min-height: 95vh;
+    min-height: 90vh;
+}
+.hero_area .hero_single_col .left h2{
+    margin-bottom: 10px;
 }
 
 .hero_area .hero_single_col .right .img_box{
-    flex-basis: 56%;
+    flex-basis: 50%;
 }
+
 
 .page_into{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/page-title2.jpg);

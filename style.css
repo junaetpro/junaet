@@ -107,6 +107,7 @@ body{
     height: 100vh;
     background: linear-gradient(230deg, #203D44, #2A181A);
     padding: 150px 10% 50px;
+    box-sizing: border-box;
     
 }
 
@@ -142,7 +143,7 @@ body{
 
 .hero_area .hero_single_col .left p{
     font-size: var(--p-font-size);
-    width: 90%;
+    width: 100%;
     margin-bottom: 40px;
     color: var(--text-color);
     line-height: var(--p-line-hight);
