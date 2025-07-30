@@ -221,7 +221,7 @@ questions.forEach((q, index) => {
 
 
 //=========animation title
-const anim_hading = document.querySelectorAll('.skill_right_h2');
+const anim_hading = document.querySelectorAll('.hading_come_right_animation');
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {  // Use 'entry' instead of 'en'

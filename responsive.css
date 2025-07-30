@@ -310,6 +310,13 @@
     padding: 30px;
     width: 80%;
 }
+
+
+.blog_details .img{
+    width: 70%;
+    height: 300px;
+    
+}
 }
 @media  (max-width: 780px) {
 /*=================root===================*/
@@ -612,6 +619,15 @@
 .project_section .FAQ_main .box{
     width: 90%;
     padding: 10px;
+}
+
+.blog_details .img{
+    width: 80%;
+    height: 300px;
+    
+}
+.blog_details .extra_img_box .blog_extra_img{
+    width: 60%;
 }
 }
 @media  (max-width: 600px) {
@@ -1118,6 +1134,19 @@ width: 50%;
 }
 .project_section .FAQ_main .box{
     width: 100%;
+}
+
+.blog_details .img{
+    width: 90%;
+    height: 200px;
+    margin: 0 auto 30px;
+    
+}
+.blog_details .img .blog_hero_img{
+    object-fit: contain;
+}
+.blog_details .extra_img_box .blog_extra_img{
+    width: 70%;
 }
 
 }
