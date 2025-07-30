@@ -219,5 +219,18 @@ questions.forEach((q, index) => {
 });
 
 
-    
 
+//=========animation title
+const anim_hading = document.querySelectorAll('.skill_right_h2');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {  // Use 'entry' instead of 'en'
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate');
+    }
+  });
+});
+
+anim_hading.forEach((el) => { // Use 'el' to match here
+  observer.observe(el);
+});

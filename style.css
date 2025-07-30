@@ -191,22 +191,50 @@ body{
     position: absolute;
     height: 90px;
     width: 90px;
-    border: 8px solid var(--text-color);
+    border: 5px solid var(--text-color);
     background-color: var(--text-color);
 }
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo_wp{
     top: 25px;
     left: 25px;
+    animation: hero_wp 3s ease-in-out infinite alternate;
+}
+@keyframes hero_wp{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-10px, -10px);
+    }
 }
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo_js{
     top: 25px;
     right: 25px;
+    animation: hero_js 3s ease-in-out infinite alternate;
 }
-
+@keyframes hero_js{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(10px, -10px);
+    }
+}
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo_php{
     bottom: 25px;
     right: 25px;
+    animation: hero_php 3s ease-in-out infinite alternate;
+
 }
+@keyframes hero_php{
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(10px, 10px);
+    }
+}
+
 .hero_area .hero_single_col .right .img_box .hero_skill_text{
     position: absolute;
     bottom: 20px;
@@ -265,8 +293,10 @@ body{
     color: var(--color-two);
     font-size: 100px;
     padding-bottom: 20px;
+
     
 }
+
 .about .left .main_box span{
     font-size: var(--h3-font-size);
     margin-bottom: 100px;
@@ -302,9 +332,17 @@ body{
 .about .right{
     flex-basis: 50%;
 }
-.about .right .skill_right_h2{
+/*----animation by js-----*/
+.about .right .skill_right_h2 {
     font-size: var(--h2-font-size);
     margin-bottom: 20px;
+    opacity: 0;
+    transform:  translateX(100px) scale(0.3);
+    transition: 1s;
+}
+.about .right .skill_right_h2.animate{
+    opacity: 1;
+    transform: translateX(0) scale(1);
 }
 .about .right .skill_right_p{
     font-size: var(--p-font-size);
@@ -408,11 +446,11 @@ body{
     flex-basis: 50%;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
 }
 .about .left .img_box{
     display: flex;
-    flex-basis: 85%;
+    flex-basis: 70%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -426,8 +464,8 @@ body{
 }
 .about .left .img_box img.hero_skill_logo{
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     border: 10px solid #fff;
     background-color: #fff;
 }
@@ -491,7 +529,7 @@ body{
 
 .pricing .price_col {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -556,6 +594,30 @@ body{
 .pricing .price_col .price_box .btn_price:hover{
     background-color: var(--color-one);
     color: var(--text-color);
+}
+
+.pricing .price_col .price_box:nth-child(1){
+    animation: pricing_box_left;
+    animation-timeline: view(70% 0%);
+}
+@keyframes pricing_box_left{
+    from{
+        transform: translateX(-30px);
+    }to{
+        transform: translateX(0px) ;
+    }
+}
+
+.pricing .price_col .price_box:nth-child(3){
+    animation: pricing_box_right;
+    animation-timeline: view(70% 0%);
+}
+@keyframes pricing_box_right{
+    from{
+        transform: translateX(30px) ;
+    }to{
+        transform: translateX(0px);
+    }
 }
 
 /*--=============priceing end====================--*/
@@ -780,11 +842,25 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 .experience .text_area h2{
     font-size: var(--h2-font-size);
     margin-bottom: 20px;
+    animation: experience_sectrion_hading_animation;
+    animation-timeline: view(60% 0%);
 }
+@keyframes experience_sectrion_hading_animation{
+    from{
+        opacity: 0;
+        transform: scale(.3) translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) translateY(0px);;
+    }
+}
+
+
 .experience .text_area p{
     line-height: var(--p-line-hight);
     font-size: var(--p-font-size);
-    width: 60%;
+    width: 80%;
     margin: auto;
 }
 
@@ -846,6 +922,34 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 
 .experience .experience_row .experience_col .c_web_link:hover i{
     margin-left: 10px;
+}
+
+.experience .experience_row .experience_col:nth-child(1){
+    animation: experience_box_left;
+    animation-timeline: view(90% 0%);
+}
+@keyframes experience_box_left{
+    from{
+        opacity: 0;
+        transform: translateX(-200px) scale(.3);
+    }to{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
+}
+
+.experience .experience_row .experience_col:nth-child(3){
+    animation: experience_box_right;
+    animation-timeline: view(90% 0%);
+}
+@keyframes experience_box_right{
+    from{
+        opacity: 0;
+        transform: translateX(200px) scale(.3);
+    }to{
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+    }
 }
 
 /*--=============experience end====================--*/
@@ -1087,6 +1191,7 @@ padding: 0 10px;
     border-radius: 50%;
     padding: 10px;
 }
+
 .recentwork .text_area .right .icon_box .icon{
     padding: 25px;
     background-color: #27352B;
@@ -1323,6 +1428,18 @@ background-color: var(--color-one);
 .Service .text_area h2{
     font-size: var(--h2-font-size);
     margin-bottom: 20px;
+    animation: Service_sectrion_hading_animation;
+    animation-timeline: view(60% 0%);
+}
+@keyframes Service_sectrion_hading_animation{
+    from{
+        opacity: 0;
+        transform: scale(.3) translateY(200px);
+    }
+    to{
+        opacity: 100%;
+        transform: scale(1)  translateY(0px);
+    }
 }
 .Service .text_area p{
     line-height: var(--p-line-hight);
@@ -1975,3 +2092,6 @@ background-color: var(--color-one);
 .project_section .FAQ_main .box .answer p{
     font-size: var(--p-font-size);
 }
+
+
+
