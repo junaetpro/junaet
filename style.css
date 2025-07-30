@@ -625,7 +625,7 @@ body{
 .small_contact_link_section{
     padding: var(--section-padding);
     padding-left: 0;
-    background-color: #1B1A19;
+    background-color: #262626;
 
 }
 .small_contact_link_section .small_contact_link_box{
