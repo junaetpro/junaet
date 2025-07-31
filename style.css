@@ -811,7 +811,39 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 .page_into .text h2{
     color: var(--text-color);
     font-size: var(--h2-font-size);
-    padding: 30px 0;
+    margin: 30px 0 10px;
+    padding: 0 10px;
+    color: transparent;
+    animation: text_r .1s ease forwards;
+    animation-delay: 1s;
+    position: relative;
+}
+@keyframes text_r {
+    100%{
+        color: var(--text-color);
+    }
+}
+.page_into .text h2 span{
+    background-color: #08b860;
+    height: 100%;
+    width: 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: bg-ani 1.2s ease forwards;
+    animation-delay: .3s;
+
+}
+@keyframes bg-ani {
+    50%{
+        
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+    }
 }
 .page_into .text p{
     color: var(--text-color);
@@ -983,7 +1015,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 
 .contact_info_3_box .contact_info_3_box_row .contact_info_3_box_col:nth-child(1){
     animation: contact_info_3_box_left;
-    animation-timeline: view(90% 0%);
+    animation-timeline: view(99% 0%);
 }
 @keyframes contact_info_3_box_left{
     from{
@@ -997,7 +1029,7 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 
 .contact_info_3_box .contact_info_3_box_row .contact_info_3_box_col:nth-child(3){
     animation: contact_info_3_box_right;
-    animation-timeline: view(90% 0%);
+    animation-timeline: view(99% 0%);
 }
 @keyframes contact_info_3_box_right{
     from{
@@ -1713,7 +1745,7 @@ background-color: var(--color-one);
 .portfolio .portfolio_area{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
     
 }
 .portfolio .portfolio_area .p_box{
@@ -1726,6 +1758,7 @@ background-color: var(--color-one);
 .portfolio .portfolio_area .p_box img{
     width: 100%;
     transition:.3s;
+    object-fit: cover;
     
 }
 .portfolio .portfolio_area .p_box:hover img{
@@ -1774,14 +1807,14 @@ background-color: var(--color-one);
 }
 .portfolio .portfolio_area .p_box .text_come_bottom a{
     color: #fff;
-    padding: 10px 20px;
-    background-color: #b6b6b626;
+    padding: 5px 10px;
+    background-color: #026131;
     backdrop-filter: blur(10px);
     width: fit-content;
     border-radius: 50px;
-    outline: 1px solid #ffffff5b;
+    outline: 1px solid var(--color-two);
     outline-offset: 3px;
-    font-size: var(--p-font-size);
+    font-size: var(--p-mini-font-size);
 }
 
 /*--============= portfolio end====================--*/
@@ -2202,3 +2235,84 @@ background-color: var(--color-one);
     transform: translateX(0) scale(1);
 }
 
+
+
+/*==========blog page==============*/
+#blog_section_page{
+    padding: var(--section-padding);
+}
+#blog_section_page .text h1{
+    font-size: var(--h2-font-size);
+    margin-bottom: 30px;
+    text-align: center;
+}
+#blog_section_page .text h1 span{
+    color: var(--color-two);
+}
+#blog_section_page .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+#blog_section_page .content .box{
+    background-color: #00351b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text-color);
+    overflow: hidden;
+    position: relative;
+}
+#blog_section_page .content .box h2{
+    font-size: var(--h3-font-size);
+    padding-left: 20px;
+    margin-bottom: 15px;
+    color: var(--color-two);
+}
+
+#blog_section_page .content .box p{
+    font-size: var(--p-font-size);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    line-height: var(--p-line-hight);
+    width: 90%;
+}
+#blog_section_page .content .box a{
+    margin-left: 20px;
+    color: var(--text-color);
+    font-size: var(--p-mini-font-size);
+    
+}
+#blog_section_page .content .box a:hover{
+    color: var(--color-two);
+}
+#blog_section_page .content .box a i{
+    transition: .3s;
+    font-size: var(--p-font-size);
+}
+#blog_section_page .content .box a:hover i{
+    margin-left: 20px;
+}
+#blog_section_page .content .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .3s;
+
+}
+
+#blog_section_page .content .box:hover img{
+    transform: scale(1.1);
+}
+#blog_section_page .content .box span{
+    position: absolute;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#blog_section_page .content .box:hover span{
+    background-color: rgba(0, 0, 0, 0.3);
+}
