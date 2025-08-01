@@ -123,24 +123,112 @@ body{
     flex-basis: 50%;
 }
 .hero_area .hero_single_col .left span{
-    color: var(--color-two);
+    
     font-size: var(--h3-font-size);
     display: inline-block;
     margin-bottom: 10px;
+    color: transparent;
+    animation: hero_left_span 1s ease forwards;
+    animation-delay: .3s;
+    position: relative;
+}
+@keyframes hero_left_span{
+    100%{
+        color: var(--color-two);
+    }
+}
+.hero_area .hero_single_col .left span div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background-color: var(--color-two);
+    animation: hero_left_span_div_move 1s ease forwards;
+}
+@keyframes hero_left_span_div_move{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
 }
 .hero_area .hero_single_col .left h1{
-    color: var(--text-color);
     font-size: 90px;
     margin-bottom: 5px;
-    text-shadow: 0px 0px 10px #000000;
+    padding: 5px 5px 5px 0;
+    width: fit-content;
+    color: transparent;
+    animation: hero_left_h1 .2s ease-in forwards;
+    animation-delay: .6s;
+    position: relative;
+}
+@keyframes hero_left_h1{
+    100%{
+        color: var(--text-color);
+        text-shadow: 0px 0px 10px #000000;
+    }
+}
+
+.hero_area .hero_single_col .left h1 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #026131;
+    animation: hero_left_h1_div_move 1s ease forwards;
+    animation-delay: .2s;
+}
+@keyframes hero_left_h1_div_move{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
 }
 
 .hero_area .hero_single_col .left h2{
-    color: var(--color-one);
     font-size: var(--spacial-text);
     margin-bottom: 10px;
+    color: transparent;
+    animation: hero_left_h2 1s ease forwards;
+    animation-delay: 2s;
+    position: relative;
+    width: fit-content;
+}
+@keyframes hero_left_h2{
+    100%{
+        color: var(--color-one);
+    }
 }
 
+.hero_area .hero_single_col .left h2 div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #026131;
+    animation: hero_left_h1_div_move 1s ease forwards;
+    animation-delay: 1.5s;
+}
+@keyframes hero_left_h2_div_move{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
 .hero_area .hero_single_col .left p{
     font-size: var(--p-font-size);
     width: 100%;
