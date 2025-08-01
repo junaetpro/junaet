@@ -483,14 +483,14 @@
     
 }
 .page_into{
-    height: 10vh;
+    height: 15vh;
 }
 
 .page_into .text h2{
-    padding: 10px 0;
+    padding: 5px 0;
 }
 .page_into .text p{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 /*=================about===================*/
@@ -984,7 +984,7 @@ margin-top: 40px;
 
 
 .page_into{
-    height: 8vh;
+    height: 15vh;
     background-position: right;
     position: relative;
 }

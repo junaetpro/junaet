@@ -898,9 +898,9 @@ background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/page-ti
 }
 .page_into .text h2{
     color: var(--text-color);
-    font-size: var(--h2-font-size);
-    margin: 30px 0 10px;
-    padding: 0 10px;
+    font-size: var(--h3-font-size);
+    margin: 20px 0 5px;
+    padding: 0 5px;
     color: transparent;
     animation: text_r .1s ease forwards;
     animation-delay: 1s;
