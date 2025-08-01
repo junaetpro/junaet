@@ -193,10 +193,7 @@ animateCounter(skill_s6_count2, skill_s6_count_end);
 
 //===============================================
 
-    const topBtn = document.getElementById("topBtn");
-    window.onscroll = () => {
-      topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
-    };
+
 
 
 
@@ -234,3 +231,34 @@ const observer = new IntersectionObserver((entries) => {
 anim_hading.forEach((el) => { // Use 'el' to match here
   observer.observe(el);
 });
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const hideItems = document.querySelectorAll(".fives_hide_idem");
+        let hideTimeout;
+
+        function showItemsThenAutoHide() {
+            // Show all items
+            hideItems.forEach(el => el.classList.remove("hidden"));
+
+            // Clear previous hide timer
+            clearTimeout(hideTimeout);
+
+            // Hide after 5s
+            hideTimeout = setTimeout(() => {
+                hideItems.forEach(el => el.classList.add("hidden"));
+            }, 5000);
+        }
+
+        // Initial show and auto-hide
+        showItemsThenAutoHide();
+
+        // Show again on scroll and restart hide timer
+        window.addEventListener("scroll", showItemsThenAutoHide);
+    });
+
+    // Scroll-to-top button visibility control
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = () => {
+        topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
+    };

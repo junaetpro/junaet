@@ -1922,28 +1922,6 @@ background-color: var(--color-one);
 }
 /*--============= Coming_soon end====================--*/
 
-/*--============= scroll top start====================--*/
-.scroll_top{
-    position: fixed;
-    color: #fff;
-    bottom: 25px;
-    right: 25px;
-    transition: .3s;
-    
-}
-.scroll_top .s_t_btn{
-    padding: 5px;
-    background-color: var(--color-one);
-    border-radius: 50%;
-    border: 1px solid #08b860;
-    font-size: 20px;
-    display: none;
-    transition: .3s;
-}
-.scroll_top .s_t_btn:hover{
-    transform: translateY(-5px);
-}
-/*--============= scroll top end====================--*/
 
 
 .warning_updateing{
@@ -2418,4 +2396,46 @@ background-color: var(--color-one);
 }
 .blog_section_page .blog_area .left_img_right_content .content a:hover i{
     margin-left: 10px;
+}
+
+
+
+/*--============= scroll top start====================--*/
+.scroll_top{
+    position: fixed;
+    color: #fff;
+    bottom: 25px;
+    right: 25px;
+    transition: .7s;
+    
+}
+.scroll_top .s_t_btn{
+    padding: 5px;
+    background-color: var(--color-one);
+    border-radius: 50%;
+    border: 1px solid #08b860;
+    font-size: 20px;
+    display: none;
+    transition: .3s;
+    color: var(--text-color);
+}
+.scroll_top .s_t_btn:hover{
+    transform: translateY(-5px);
+}
+/*--============= scroll top end====================--*/
+
+
+.wp_btn{
+    position: fixed;
+    bottom: 80px ;
+    right: 20px;
+    transition: .7s;
+}
+.wp_btn a{
+    color: var(--color-one);
+    font-size: var(--h2-font-size);
+}
+.fives_hide_idem.hidden {
+    margin-right: -200px;
+    
 }
