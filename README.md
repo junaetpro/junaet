@@ -54,6 +54,15 @@ This project is designed to help learners and developers:
 
 ---
 
-## 🔍 SEO Keywords
+## 👤 About Me
 
+I’m **Junaet Islam**, a Full Stack Web Developer passionate about creating dynamic, user-focused web applications. With strong skills in frontend technologies and UI/UX design, I build beautiful, responsive websites that connect users with content seamlessly.
 
+---
+
+## 📫 Contact Me
+
+- 📧 Email: [junaetpro@gmail.com](mailto:junaetpro@gmail.com)  
+- 💼 LinkedIn: [linkedin.com/in/junaetislam](https://www.linkedin.com/in/junaetislam/)  
+- 💻 GitHub: [github.com/junaetpro](https://github.com/junaetpro)  
+- 🌐 Portfolio: [junaetpro.github.io/junaet](https://junaetpro.github.io/junaet/)
