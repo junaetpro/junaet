@@ -2315,7 +2315,7 @@ background-color: var(--color-one);
 
 .hading_come_right_animation{
     opacity: 0;
-    transform:  translateX(200px) scale(0.3);
+    transform:  translateX(100px) scale(0.3);
     transition: 1s;
 }
 .hading_come_right_animation.animate{
