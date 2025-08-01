@@ -36,7 +36,7 @@
 }
 
 .hero_area .hero_single_col .right .img_box{
-    flex-basis: 75%;
+    flex-basis: 70%;
 }
 .hero_area .hero_single_col .right .img_box img.hero_skill_logo{
     height: 70px;
