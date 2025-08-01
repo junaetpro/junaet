@@ -260,3 +260,30 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+
+
+//=================================
+const scrtopBtn = document.getElementById("scrtopBtn");
+let timeoutId2 = null;
+
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollY >= 500) {
+    // Show the button
+    scrtopBtn.classList.add("show");
+
+    // Reset the hide timer
+    clearTimeout(timeoutId2);
+    timeoutId2 = setTimeout(() => {
+      scrtopBtn.classList.remove("show");
+    }, 5000);
+
+  } else {
+    // Hide the button immediately if scroll < 500
+    scrtopBtn.classList.remove("show");
+    clearTimeout(timeoutId2);
+  }
+});
+

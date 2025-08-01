@@ -1191,6 +1191,22 @@ width: 50%;
     width: 70%;
 }
 
+
+.scroll_top{
+    bottom: 20px;
+    right: 10px;
+    
+}
+.scroll_top .s_t_btn{
+    padding: 2px;
+    border: none;
+    font-size: 18px;
+}
+
+.wp_btn{
+    bottom: 70px ;
+    right: 10px;
+}
 }
 @media  (max-width: 330px) {
 /*=================root===================*/

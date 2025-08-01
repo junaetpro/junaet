@@ -2200,7 +2200,7 @@ background-color: var(--color-one);
 
 }
 .project_section .FAQ_main .box{
-    background-color: #026131;
+    background-color: #00351b;
     
     width: 70%;
     border-radius: 10px;
@@ -2401,37 +2401,40 @@ background-color: var(--color-one);
 
 
 /*--============= scroll top start====================--*/
+
 .scroll_top{
     position: fixed;
-    color: #fff;
-    bottom: 25px;
-    right: 25px;
+    bottom: 20px ;
+    right: 20px;
     transition: .7s;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #08b860;
+    border-radius: 50%;
     
 }
-.scroll_top .s_t_btn{
-    padding: 5px;
-    background-color: var(--color-one);
-    border-radius: 50%;
-    border: 1px solid #08b860;
-    font-size: 20px;
-    display: none;
-    transition: .3s;
+.scroll_top i{
     color: var(--text-color);
+    font-size: var(--h3-font-size);
+    padding: 5px;
+    display: inline-block;
+    
 }
-.scroll_top .s_t_btn:hover{
-    transform: translateY(-5px);
+.scroll_top.show {
+    opacity: 1;
 }
 /*--============= scroll top end====================--*/
 
 
 .wp_btn{
     position: fixed;
-    bottom: 80px ;
+    bottom: 90px ;
     right: 20px;
     transition: .7s;
     opacity: 0;
-    pointer-events: none;
+    cursor: pointer;
+    z-index: 1;
 }
 .wp_btn a{
     color: var(--color-one);
@@ -2439,7 +2442,5 @@ background-color: var(--color-one);
     
 }
 .wp_btn.show {
-        opacity: 1;
-        pointer-events: auto; 
-    
+    opacity: 1;
 }
