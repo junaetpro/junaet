@@ -639,6 +639,9 @@
 .blog_details .extra_img_box .blog_extra_img{
     width: 60%;
 }
+.blog_section_page .text_area{
+    margin-bottom: 80px;
+}
 #blog_section_page .content .box h2{
     margin-bottom: 10px;
     padding-left: 10px;
