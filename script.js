@@ -193,7 +193,10 @@ animateCounter(skill_s6_count2, skill_s6_count_end);
 
 //===============================================
 
-
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = () => {
+      topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
+    };
 
 
 
@@ -233,32 +236,27 @@ anim_hading.forEach((el) => { // Use 'el' to match here
 });
 
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const hideItems = document.querySelectorAll(".fives_hide_idem");
-        let hideTimeout;
+//=================================
+const wpBtn = document.getElementById("wpBtn");
+let timeoutId = null;
 
-        function showItemsThenAutoHide() {
-            // Show all items
-            hideItems.forEach(el => el.classList.remove("hidden"));
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY || document.documentElement.scrollTop;
 
-            // Clear previous hide timer
-            clearTimeout(hideTimeout);
+  if (scrollY >= 500) {
+    // Show the button
+    wpBtn.classList.add("show");
 
-            // Hide after 5s
-            hideTimeout = setTimeout(() => {
-                hideItems.forEach(el => el.classList.add("hidden"));
-            }, 5000);
-        }
+    // Reset the hide timer
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      wpBtn.classList.remove("show");
+    }, 5000);
 
-        // Initial show and auto-hide
-        showItemsThenAutoHide();
+  } else {
+    // Hide the button immediately if scroll < 500
+    wpBtn.classList.remove("show");
+    clearTimeout(timeoutId);
+  }
+});
 
-        // Show again on scroll and restart hide timer
-        window.addEventListener("scroll", showItemsThenAutoHide);
-    });
-
-    // Scroll-to-top button visibility control
-    const topBtn = document.getElementById("topBtn");
-    window.onscroll = () => {
-        topBtn.style.display = (window.scrollY > 200) ? "block" : "none";
-    };

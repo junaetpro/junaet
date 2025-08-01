@@ -2430,12 +2430,16 @@ background-color: var(--color-one);
     bottom: 80px ;
     right: 20px;
     transition: .7s;
+    opacity: 0;
+    pointer-events: none;
 }
 .wp_btn a{
     color: var(--color-one);
     font-size: var(--h2-font-size);
+    
 }
-.fives_hide_idem.hidden {
-    margin-right: -200px;
+.wp_btn.show {
+        opacity: 1;
+        pointer-events: auto;
     
 }
