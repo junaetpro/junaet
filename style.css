@@ -2440,6 +2440,6 @@ background-color: var(--color-one);
 }
 .wp_btn.show {
         opacity: 1;
-        pointer-events: auto;
+        pointer-events: auto; 
     
 }
