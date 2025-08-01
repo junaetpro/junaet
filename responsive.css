@@ -155,7 +155,7 @@
 
 /*--=============page intro start====================--*/
 .page_into{
-    height: 20vh;
+    height: 15vh;
 }
 /*=================about===================*/
 .about .left .main_box h1{
@@ -483,7 +483,7 @@
     
 }
 .page_into{
-    height: 25vh;
+    height: 10vh;
 }
 
 .page_into .text h2{
@@ -984,8 +984,7 @@ margin-top: 40px;
 
 
 .page_into{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/page-title2.jpg);
-    height: 15vh;
+    height: 8vh;
     background-position: right;
     position: relative;
 }
